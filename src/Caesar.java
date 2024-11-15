@@ -4,9 +4,10 @@ public class Caesar {
     private int S;
     private String Gt;
 
-    public Caesar(){}
-
-
+    public Caesar() {
+        Kt = "";
+        Gt = "";
+    }
         public void verschluesseln(){
             for (int i = 0 ; i < Kt.length()  ; i++) {
                 int h = this.getASCII(Kt.charAt(i));
@@ -28,33 +29,27 @@ public class Caesar {
             return (char) pWert;
         }
 
-        public void getKt(String pWert) {
-
-        }
 
         public String getKt() {
-            return (String) Kt;
+            return Kt;
         }
 
-        public void getS(int pWert) {
-
+        public int getS() {
+             return S;
         }
         public String getGt() {
-            return (String) Gt;
+            return Gt;
         }
 
         public void setKt(String zeichenkette) {
+            Kt = zeichenkette;
+
         }
 
         public void setS(int schluessel) {
+            S = schluessel;
         }
 
 
 
 }
-
-
-
-
-    }
-
